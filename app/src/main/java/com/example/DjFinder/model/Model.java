@@ -18,7 +18,7 @@ import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.sqlite.db.SimpleSQLiteQuery;
 
-import com.example.DjFinder.restAPI.RetrofitClientInstance;
+import com.example.DjFinder.restAPI.QuoteRepository;
 import com.google.firebase.auth.FirebaseUser;
 
 import java.util.ArrayList;
@@ -252,6 +252,10 @@ public class Model {
     }
 
 
+    private QuoteRepository quoteRepository = new QuoteRepository();
 
+    public void getRandomQuote(QuoteRepository.QuoteCallback callback) {
+        quoteRepository.getRandomQuote(callback);
+    }
 }
 

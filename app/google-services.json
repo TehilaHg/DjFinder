@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "161791312237",
+    "project_id": "djfinderapp-a2a22",
+    "storage_bucket": "djfinderapp-a2a22.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:161791312237:android:9db0f5195b20ba8e9c1a64",
+        "android_client_info": {
+          "package_name": "com.example.DjFinder"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDDgcIsJs0tFV581-qS36Ba8dBgoRAz9hs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

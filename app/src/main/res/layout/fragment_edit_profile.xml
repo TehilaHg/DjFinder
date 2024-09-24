@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditProfileFragment">
+
+    <TextView
+        android:id="@+id/editProfileTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="99dp"
+        android:gravity="center"
+        android:text="Edit Profile"
+        android:textColor="#3F51B5"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/edit_profile_avatar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/edit_profile_avatar"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="105dp"
+        android:layout_marginBottom="120dp"
+        app:layout_constraintBottom_toTopOf="@+id/edit_profile_confirm_btn"
+        app:layout_constraintEnd_toStartOf="@+id/edit_profile_gallery_btn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editProfileTitle"
+        app:srcCompat="@drawable/profile_pic" />
+
+    <ImageButton
+        android:id="@+id/edit_profile_camera_btn"
+        android:layout_width="65dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="149dp"
+        android:layout_marginBottom="148dp"
+        android:src="@drawable/add_a_photo"
+        app:layout_constraintBottom_toBottomOf="@+id/edit_profile_confirm_btn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/edit_profile_avatar"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/edit_username"
+        android:layout_width="315dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/user_post_list_row_border"
+        android:hint="Edit Username"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_profile_avatar" />
+
+    <Button
+        android:id="@+id/edit_profile_confirm_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="56dp"
+        android:layout_marginBottom="210dp"
+        android:backgroundTint="#3F51B5"
+        android:text="Confirm"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/edit_profile_avatar"
+        app:layout_constraintTop_toBottomOf="@+id/edit_username"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageButton
+        android:id="@+id/edit_profile_gallery_btn"
+        android:layout_width="62dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="147dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginBottom="193dp"
+        android:src="@drawable/upload_photo"
+        app:layout_constraintBottom_toBottomOf="@+id/edit_profile_confirm_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/edit_profile_avatar"
+        app:layout_constraintTop_toTopOf="@+id/edit_profile_avatar"
+        app:layout_constraintVertical_bias="1.0" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
